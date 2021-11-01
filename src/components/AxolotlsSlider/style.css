@@ -17,7 +17,6 @@
 .swiper {
     margin-top: 88px;
     width: 100%;
-    height: auto;
 }
 
 .axolotls-slider .swiper {
@@ -61,4 +60,22 @@
 .swiper-slide-next img {
     width: 438px;
     height: 438px;
+}
+
+.axolotls-slider .swiper-pagination-bullet {
+    width: 55px;
+    height: 5px;
+    border-radius: 8px;
+    opacity: 1;
+    background: #595478;
+    transition: .5s;
+}
+
+.axolotls-slider .swiper-pagination-bullet:hover {
+    background: #8200FF;
+}
+
+.axolotls-slider .swiper-pagination-bullet-active {
+    height: 10px;
+    background: #8200FF;
 }

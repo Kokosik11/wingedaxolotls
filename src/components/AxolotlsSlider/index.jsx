@@ -36,7 +36,6 @@ const AxolotlsSlider = props => {
             
                 <Swiper 
                     slidesPerView={3} 
-                    spaceBetween={3} 
                     pagination={{ "clickable": true }} 
                     loop={true} 
                     autoplay={{
