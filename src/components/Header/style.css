@@ -95,3 +95,12 @@
     color: #ffffff;
     cursor: pointer;
 }
+
+.header_social-links a img {
+    filter: contrast(0);
+    transition: .25s;
+}
+
+.header_social-links a:hover img {
+    filter: contrast(10);
+}
