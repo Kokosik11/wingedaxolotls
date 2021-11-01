@@ -59,6 +59,7 @@
   border-radius: 27px;
   transition: .2s;
   cursor: pointer;
+  padding: 8px 0
 }
 
 .main_connect-wallet:after {
