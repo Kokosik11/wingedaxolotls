@@ -18,14 +18,14 @@ function App() {
       <main>
 
         <Main />
-        {/*<AxolotlsSlider />*/}
-        {/*<AxolotlsClasses />*/}
+        <AxolotlsSlider />
+        <AxolotlsClasses />
         <Roadmap />
         <JoinOurCommunity />
         <Faq />
 
       </main>
-      {/*<Footer />*/}
+      <Footer />
     </div>
   )
 }
