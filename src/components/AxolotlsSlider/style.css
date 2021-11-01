@@ -24,12 +24,9 @@
     overflow: visible;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 520px;
+    height: 540px;
 }
 
-.axolotls-slider .swiper-pagination {
-    bottom: -67px !important;
-}
 
 .swiper-slide {
     text-align: center;
@@ -46,7 +43,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .axolotls-slider .swiper-wrapper {
