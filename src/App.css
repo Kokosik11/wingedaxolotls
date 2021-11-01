@@ -1,7 +1,5 @@
 .gradient-purple {
     color: #8200FF;
-    font-weight: 700;
-    font-size: 65px;
 }
 
 h2 {
@@ -13,6 +11,7 @@ h2 {
 
 h1 {
     font-size: 65px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
 }
