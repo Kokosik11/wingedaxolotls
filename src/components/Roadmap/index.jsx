@@ -51,7 +51,7 @@ const Roadmap = props => {
           <div className={`${componentClass}_wrapper`}>
             <div className={`${componentClass}_title`}>{'Roadmap'}</div>
             <div className={`${componentClass}_content`}>
-              {roadmapItems.map((item) => <RoadmapItem id={item.id} title={item.title} text={item.text} />)}
+              {roadmapItems.map((item) => <RoadmapItem key={item.id.toString()} id={item.id} title={item.title} text={item.text} />)}
             </div>
           </div>
         </section>
