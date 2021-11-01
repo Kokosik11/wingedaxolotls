@@ -61,17 +61,17 @@
   position: absolute;
   width: 5px;
   background-color: #8200FF;
-  height: 130px;
+  height: 140px;
   border-radius: 5px;
   left: 57px;
-  top: -10%;
+  top: -12%;
 }
 
 .roadmap-item_bottom-line {
   position: absolute;
   width: 5px;
   background-color: #8200FF;
-  height: 245px;
+  height: 310px;
   border-radius: 5px;
   left: 57px;
   top: 38%;
