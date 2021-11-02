@@ -19,7 +19,7 @@ function App() {
 
         <Main />
         <AxolotlsSlider />
-        {/* <AxolotlsClasses /> */}
+        <AxolotlsClasses />
         <Roadmap />
         <JoinOurCommunity />
         <Faq />
