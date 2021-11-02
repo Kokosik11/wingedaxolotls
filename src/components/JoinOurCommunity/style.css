@@ -81,3 +81,38 @@
 .community_join-btn:hover:after {
   opacity: 1;
 }
+
+@media (max-width: 1280px) {
+  .community_wrapper {
+    width: auto;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .community {
+    background-size: cover;
+  }
+
+  .community_logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .community_text-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .community_title {
+    font-size: 42px;
+  }
+  .community_join-btn {
+    font-size: 18px;
+    height: 56px;
+    width: 280px;
+  }
+}

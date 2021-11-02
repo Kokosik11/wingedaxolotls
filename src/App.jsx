@@ -17,13 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header setIsLorePage={setIsLorePage} isLorePage={isLorePage} />
+      {/*<Header setIsLorePage={setIsLorePage} isLorePage={isLorePage} />*/}
       <main>
         {
           isLorePage ? <Lore /> : <>
-            <Main />
-            <AxolotlsSlider />
-            <AxolotlsClasses />
+            {/*<Main />*/}
+            {/*<AxolotlsSlider />*/}
+            {/*<AxolotlsClasses />*/}
             <Roadmap />
             <JoinOurCommunity />
             <Faq />
@@ -31,7 +31,7 @@ function App() {
         }
 
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </div>
   )
 }
