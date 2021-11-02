@@ -10,12 +10,13 @@ import Drakonid from "../../assets/slider/drakonid.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
+import "swiper/css/navigation"
 
 import SwiperCore, {
-    Autoplay,
+    Autoplay, Navigation,
 } from 'swiper';
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use([Autoplay, Navigation]);
 
 const data = [
     {
@@ -71,11 +72,17 @@ const AxolotlsClasses = props => {
                     slidesPerView={3}  
                     direction={'vertical'}
                     loop={true} 
-                    
+                    navigation={true}
                     className="mySwiperClasses"
                 >
                     {data.map((slide, index) => (
-                        <SwiperSlide key={index}><img src={slide.img} alt={slide.title} /></SwiperSlide>
+                        <SwiperSlide key={index}>
+                            <img src={slide.img} alt={slide.title} />
+                            <div className="slide-content">
+                                <h3>{slide.title}</h3>
+                                <div>{slide.description}</div>
+                            </div>
+                        </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
