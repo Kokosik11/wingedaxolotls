@@ -49,19 +49,6 @@ const data = [
 
 const AxolotlsClasses = props => {
     const componentClass = props.className || "axolotls-classes"
-    
-    // useEffect(() => {
-    //     const swiperSlide = document.querySelectorAll(".swiper-slide");
-    //     swiperSlide.forEach(slide => {
-    //         slide.onclick = () => {
-    //             swiperSlide.forEach(sld => {
-    //                 sld.classList.remove("swiper-slide-next")
-    //             })
-
-    //             slide.classList.add("swiper-slide-next");
-    //         }
-    //     })
-    // })
 
     return (
         <section className={componentClass}>
