@@ -17,8 +17,8 @@ const Main = props => {
             <div className={`${componentClass}_content`}>
               <div className={`${componentClass}_content-text`}>
                 <h1>
-                  <span className="gradient-purple">{'5000 unique Axolotls'}</span>
-                  <br/> {'that need owners'}
+                  <span className="gradient-purple">{'5000 unique Axolotls'} </span>
+                  {'that need owners'}
                 </h1>
                 <span className={`${componentClass}_content_mainText`}>{'The Winged Axolotls is a NFT collection of 3333 unique Axolotls inspired by our Axoverse. Each axolotl has its own unique trait, and also belongs to one of 6 classes.'}</span>
               </div>
