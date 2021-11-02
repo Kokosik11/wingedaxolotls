@@ -23,7 +23,7 @@ function App() {
           isLorePage ? <Lore /> : <>
             <Main />
             <AxolotlsSlider />
-            {/* <AxolotlsClasses /> */}
+            <AxolotlsClasses />
             <Roadmap />
             <JoinOurCommunity />
             <Faq />
