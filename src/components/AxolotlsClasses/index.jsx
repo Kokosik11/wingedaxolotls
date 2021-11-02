@@ -6,6 +6,7 @@ import AxoBut from "../../assets/slider/axo-but.jpg";
 import Demon from "../../assets/slider/demon.jpg";
 import Dragonfly from "../../assets/slider/dragonfly.jpg";
 import Drakonid from "../../assets/slider/drakonid.jpg";
+import Angelic from "../../assets/slider/axolotl1.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -45,7 +46,7 @@ const data = [
         description: "The South of New Eden, full of unspoiled jungles and tropical swamps with rare land hills, harbored axolotes. The southern brethren of the Butterfly Axolotes can reciprocate with two pairs of the fastest monoplastic wings boast the highest speed and mobility, which undoubtedly, due to their fast-changing habitats. As for the cover, the bodies of the Strekonites are as smooth as possible in order to have maximum permeability in tropical drill conditions, and the wings are covered with a repellent gel allowing to reject foreign particles and keep the wings always in perfect purity."
     },
     {
-      img: AxoBut,
+      img: Angelic,
       title: "Angelic",
       description: 'For the Angels, the sandy white, yellow, and pebble coasts of New Angels were blessed with warm currents. Spending most of the time on the pearly color of stones near water these axolotes are remarkable for the structure of their body - feathered wings easily fold into the back fold, and their body, extremely flexible and smooth, is able to emit a faint white light in the dark.'
     }
