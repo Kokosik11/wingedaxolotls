@@ -120,5 +120,6 @@
 @media (max-width: 400px) {
   .community {
     margin-top: 0;
+    margin-bottom: 20px;
   }
 }
