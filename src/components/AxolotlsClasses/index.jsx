@@ -51,14 +51,12 @@ const data = [
     }
 
 ]
-
 const AxolotlsClasses = props => {
     const componentClass = props.className || "axolotls-classes"
     return (
         <section className={componentClass}>
             <div className={componentClass+"_wrapper"}>
                 <h2><span className="gradient-purple">Axolotls</span> classes</h2>
-
                 <Swiper 
                     slidesPerView={3}  
                     direction={'vertical'}

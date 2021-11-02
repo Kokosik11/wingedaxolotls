@@ -10,7 +10,7 @@ const fqaItems = [
   },
   {
     title: 'When Mint?',
-    text: 'Mid November (more info soon)',
+    text: 'Mid - End November (more info soon)',
   },
   {
     title: 'What is the total supply?',
@@ -50,11 +50,11 @@ const Faq = props => {
   const componentClass = props.className || "faq"
 
   return (
-    <section className={componentClass}>
+    <section className={componentClass} id={componentClass}>
       <div className={`${componentClass}_wrapper`}>
         <h2>{'FAQ'}</h2>
         <div className={`${componentClass}_content`}>
-          {fqaItems.map((item) => <FaqItem kay={item.title} title={item.title} text={item.text} id={item.title} />)}
+          {fqaItems.map((item) => <FaqItem title={item.title} text={item.text} id={item.title} />)}
         </div>
       </div>
     </section>
