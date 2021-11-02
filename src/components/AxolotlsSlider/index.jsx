@@ -31,7 +31,6 @@ const AxolotlsSlider = props => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
-        console.log(windowWidth)
         if(windowWidth > 667) setSlidesPerView(3);
         if(windowWidth <= 667) setSlidesPerView(2);
         if(windowWidth <= 447) setSlidesPerView(1);
