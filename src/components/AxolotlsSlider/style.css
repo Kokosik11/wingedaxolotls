@@ -14,12 +14,12 @@
 }
 
 
-.mySwiper {
+.swiper {
     margin-top: 88px;
     width: 100%;
 }
 
-.axolotls-slider .mySwiper {
+.axolotls-slider .swiper {
     overflow: visible;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -27,7 +27,7 @@
 }
 
 
-.mySwiper .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     /* Center slide text vertically */
@@ -45,11 +45,11 @@
     align-items: flex-start;
 }
 
-.axolotls-slider .mySwiper .swiper-wrapper {
+.axolotls-slider .swiper-wrapper {
     width: 80%;
 }
 
-.mySwiper .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 68%;
   transition: .3s;
@@ -57,18 +57,12 @@
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
-.mySwiper .swiper-slide-next img {
-    width: 438px;
-    height: 438px;
-=======
 .swiper-slide-next img {
     width: 70%;
   transition: .3s;
->>>>>>> 19e912bd49c6ee4b7cb5e9b78e0cdd5fa35a310e
 }
 
-.axolotls-slider .mySwiper .swiper-pagination-bullet {
+.axolotls-slider .swiper-pagination-bullet {
     width: 55px;
     height: 5px;
     border-radius: 5px;
@@ -77,16 +71,11 @@
     transition: .5s;
 }
 
-.axolotls-slider .mySwiper .swiper-pagination-bullet:hover {
+.axolotls-slider .swiper-pagination-bullet:hover {
     background: #8200FF;
 }
 
-<<<<<<< HEAD
-.axolotls-slider .mySwiper .swiper-pagination-bullet-active {
-    height: 10px;
-=======
 .axolotls-slider .swiper-pagination-bullet-active {
     height: 8px;
->>>>>>> 19e912bd49c6ee4b7cb5e9b78e0cdd5fa35a310e
     background: #8200FF;
 }

@@ -54,7 +54,7 @@ const Faq = props => {
       <div className={`${componentClass}_wrapper`}>
         <h2>{'FAQ'}</h2>
         <div className={`${componentClass}_content`}>
-          {fqaItems.map((item) => <FaqItem kay={item.title} title={item.title} text={item.text} id={item.title} />)}
+          {fqaItems.map((item) => <FaqItem title={item.title} text={item.text} id={item.title} />)}
         </div>
       </div>
     </section>
