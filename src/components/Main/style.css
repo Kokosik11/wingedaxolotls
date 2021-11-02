@@ -139,12 +139,24 @@
 }
 
 @media (max-width: 417px) {
-  .main_gif {
-    width: 100%;
+  .main {
+    margin: 120px 0;
+    text-align: center;
+  }
+
+  .main_content_mainText {
+    text-align: justify;
+    padding-top: 20px;
   }
 
   .main_connect-wallet {
+    width: 280px;
+    font-size: 20px;
+    height: 56px;
+  }
+
+
+  .main_gif {
     width: 100%;
-    font-size: 24px;
   }
 }
