@@ -116,3 +116,9 @@
     width: 280px;
   }
 }
+
+@media (max-width: 400px) {
+  .community {
+    margin-top: 0;
+  }
+}

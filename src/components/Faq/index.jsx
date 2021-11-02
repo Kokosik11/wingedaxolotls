@@ -10,7 +10,7 @@ const fqaItems = [
   },
   {
     title: 'When Mint?',
-    text: 'Mid November (more info soon)',
+    text: 'Mid - End November (more info soon)',
   },
   {
     title: 'What is the total supply?',
