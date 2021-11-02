@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,8 +26,28 @@ const sliderImgs = [ Arch, AxoBut, Axolotl1, Axolotl4,
 
 const AxolotlsSlider = props => {
     const componentClass = props.className || "axolotls-slider"
-    
-    console.log(sliderImgs)
+
+    const [slidesPerView, setSlidesPerView] = useState(3);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        console.log(windowWidth)
+        if(windowWidth > 667) setSlidesPerView(3);
+        if(windowWidth <= 667) setSlidesPerView(2);
+        if(windowWidth <= 447) setSlidesPerView(1);
+    }, [windowWidth])
+
+    const handleWindowResize = (e) => {
+        setWindowWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize)
+
+        return () => {
+            window.removeEventListener('resize', handleWindowResize)
+        }
+    }, [])
 
     return (
         <section className={componentClass}>
@@ -35,7 +55,7 @@ const AxolotlsSlider = props => {
                 <h2>5000 <span className="gradient-purple">unique Axolotls</span>, here are a few</h2>
             
                 <Swiper 
-                    slidesPerView={3} 
+                    slidesPerView={slidesPerView} 
                     pagination={{ "clickable": true }} 
                     loop={true} 
                     autoplay={{
