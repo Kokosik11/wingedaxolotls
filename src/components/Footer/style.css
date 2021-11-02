@@ -45,3 +45,18 @@
 .footer_links img {
   width: 32px;
 }
+
+@media (max-width: 520px) {
+  .footer_wrapper {
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer_logo span {
+    font-size: 24px;
+  }
+}
