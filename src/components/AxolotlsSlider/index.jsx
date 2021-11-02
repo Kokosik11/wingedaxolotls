@@ -32,14 +32,14 @@ const AxolotlsSlider = props => {
     return (
         <section className={componentClass}>
             <div className={componentClass+"_wrapper"}>
-                <h2>5, 000 <span className="gradient-purple">unique Axolotls</span>, here are a few</h2>
+                <h2>5000 <span className="gradient-purple">unique Axolotls</span>, here are a few</h2>
             
                 <Swiper 
                     slidesPerView={3} 
                     pagination={{ "clickable": true }} 
                     loop={true} 
                     autoplay={{
-                        "delay": 6000,
+                        "delay": 3000,
                         "disableOnInteraction": false
                     }}
                     className="mySwiper"
