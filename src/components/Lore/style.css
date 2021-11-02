@@ -40,6 +40,10 @@
 }
 
 @media (max-width: 417px) {
+  .lore {
+    padding: 100px 0 0;
+  }
+
   .lore_content h4 {
     font-size: 28px;
     margin: 18px 0 10px;

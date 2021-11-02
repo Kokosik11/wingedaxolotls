@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 244px 0 114px;
+  margin: 140px 0 114px;
 }
 
 .main_wrapper {
@@ -145,6 +145,9 @@
 }
 
 @media (max-width: 417px) {
+  .main {
+    margin: 120px 0 60px;
+  }
 
   .main_content_mainText {
     text-align: justify;

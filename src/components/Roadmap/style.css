@@ -127,9 +127,9 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .roadmap {
-    margin: 180px 0 80px;
+    margin: 0 0 80px;
   }
 
   .roadmap_wrapper {

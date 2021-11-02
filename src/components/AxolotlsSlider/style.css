@@ -118,6 +118,10 @@
 }
 
 @media (max-width: 462px) {
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 80px !important;
+  }
+
     .axolotls-slider .swiper-pagination-bullet {
         width: 35px;
         height: 3px;

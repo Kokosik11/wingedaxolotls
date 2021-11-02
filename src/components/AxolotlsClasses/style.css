@@ -132,6 +132,14 @@
     position: relative;
   }
 
+  .axolotls-classes {
+    margin-bottom: 20px;
+  }
+
+  .mySwiperClasses {
+    margin-top: 0;
+  }
+
   .mySwiperClasses .swiper-slide-next .slide-content {
     position: absolute;
     width: 242px;
@@ -144,5 +152,9 @@
     justify-content: center;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+  }
+
+  .axolotls-classes_wrapper h2 {
+    font-size: 36px;
   }
 }
