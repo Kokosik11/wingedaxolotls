@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./style.css";
 
 import Arch from "../../assets/slider/arch.jpg";
@@ -52,29 +52,88 @@ const data = [
     }
 
 ]
+
+const Slider = () => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [isMobile, setMobile] = useState(true); 
+
+    useEffect(() => {
+        if(windowWidth > 960) setMobile(false);
+        if(windowWidth <= 960) setMobile(true);
+        console.log(windowWidth)
+        console.log(isMobile)
+
+    }, [windowWidth])
+
+    const handleWindowResize = (e) => {
+        setWindowWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize)
+        if(windowWidth > 960) setMobile(false);
+        if(windowWidth <= 960) setMobile(true);
+        
+        return () => {
+            window.removeEventListener('resize', handleWindowResize)
+        }
+    }, [])
+
+
+    return isMobile && (
+        <Swiper 
+            slidesPerView={3}  
+            direction={'vertical'}
+            loop={true} 
+            autoplay={{
+                "delay": 5000,
+                "disableOnInteraction": false
+            }}
+            navigation={true}
+            allowTouchMove={false}
+            className="mySwiperClasses"
+        >
+            {data.map((slide, index) => (
+                <SwiperSlide key={index}>
+                    <img src={slide.img} alt={slide.title} />
+                    <div className="slide-content">
+                        <h3>{slide.title}</h3>
+                        <div>{slide.description}</div>
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    ) || (
+        <Swiper 
+            slidesPerView={3}  
+            direction={'vertical'}
+            loop={true} 
+            navigation={true}
+            allowTouchMove={true}
+            className="mySwiperClasses"
+        >
+            {data.map((slide, index) => (
+                <SwiperSlide key={index}>
+                    <img src={slide.img} alt={slide.title} />
+                    <div className="slide-content">
+                        <h3>{slide.title}</h3>
+                        <div>{slide.description}</div>
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    )
+}
+
 const AxolotlsClasses = props => {
     const componentClass = props.className || "axolotls-classes"
+
     return (
         <section className={componentClass}>
             <div className={componentClass+"_wrapper"}>
                 <h2><span className="gradient-purple">Axolotls</span> classes</h2>
-                <Swiper 
-                    slidesPerView={3}  
-                    direction={'vertical'}
-                    loop={true} 
-                    navigation={true}
-                    className="mySwiperClasses"
-                >
-                    {data.map((slide, index) => (
-                        <SwiperSlide key={index}>
-                            <img src={slide.img} alt={slide.title} />
-                            <div className="slide-content">
-                                <h3>{slide.title}</h3>
-                                <div>{slide.description}</div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                
+                <Slider />
             </div>
         </section>
     )

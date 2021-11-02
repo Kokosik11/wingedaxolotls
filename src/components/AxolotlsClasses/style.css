@@ -58,6 +58,7 @@
   object-fit: cover;
   border-radius: 8px;
   opacity: 0.5;
+  transition: .25s;
 }
 
 .mySwiperClasses .slide-content {

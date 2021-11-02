@@ -51,14 +51,14 @@
 
 .swiper-slide img {
     display: block;
-    width: 410px;
+    width: 378px;
     transition: .3s;
     object-fit: cover;
     border-radius: 8px;
 }
 
 .swiper-slide-next img {
-    width: 440px;
+    width: 408px;
     transition: .3s;
 }
 
