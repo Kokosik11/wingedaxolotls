@@ -14,8 +14,8 @@ const Footer = props => {
           <div className={`${componentClass}_logo`}><img src={logo} alt={'axolotl-logo'} /><span>{'Axolotls NFT'}</span></div>
           <div className={`${componentClass}_text`}>{'5000 unique Axolotls that need owners'}</div>
           <div className={`${componentClass}_links`}>
-            <img src={discord} alt={'discord'} />
-            <img src={twitter} alt={'twitter'} />
+            <a target={'_blank'} href={'https://discord.gg/4qXGtuVWvk'}><img src={discord} alt={'discord'} /></a>
+            <a target={'_blank'} href={'https://twitter.com/wingedaxolotls'}><img src={twitter} alt={'twitter'} /></a>
           </div>
         </div>
       </footer>

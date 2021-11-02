@@ -6,9 +6,13 @@ import connectWallet from '../../assets/main-svgs/connectWallet.svg';
 
 const Main = props => {
     const componentClass = props.className || "main"
-    
+
+    React.useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
-        <section className={componentClass}>
+        <section className={componentClass} id={'mission'}>
           <div className={`${componentClass}_wrapper`}>
             <div className={`${componentClass}_content`}>
               <div className={`${componentClass}_content-text`}>

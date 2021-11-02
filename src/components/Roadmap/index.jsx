@@ -30,7 +30,7 @@ const RoadmapItem = ({id, title, text}) => {
   const componentClass = 'roadmap-item';
 
   return (
-    <div className={componentClass}>
+    <div className={componentClass} id={componentClass}>
       <div className={`${componentClass}_top-line`} />
       <div className={`${componentClass}_bottom-line`} />
       <img src={sphere} alt={'sphere'} className={`${componentClass}_sphere`} />

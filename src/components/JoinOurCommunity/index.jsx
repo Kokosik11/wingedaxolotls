@@ -16,7 +16,7 @@ const JoinOurCommunity = props => {
                   {'Axolotls Discord already started and waiting for new AXO Owners! If you want to join the #Axoverse it’s here. Join our Discord to get the news as soon as possible !'}
                 </div>
                 <div className={`${componentClass}_join-btn`}>
-                  <span>{'Join community'}</span>
+                  <a target={'_blank'} href={'https://discord.gg/4qXGtuVWvk'}><span>{'Join community'}</span></a>
                   <img src={discord} alt={'discord'} />
                 </div>
               </div>

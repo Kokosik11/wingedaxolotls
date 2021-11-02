@@ -9,20 +9,26 @@ import Roadmap from './components/Roadmap';
 import JoinOurCommunity from './components/JoinOurCommunity';
 import Faq from './components/Faq';
 import Footer from './components/Footer';
+import Lore from "./components/Lore";
 
 function App() {
 
+  const [isLorePage, setIsLorePage] = useState(false);
+
   return (
     <div className="App">
-      <Header />
+      <Header setIsLorePage={setIsLorePage} isLorePage={isLorePage} />
       <main>
-
-        <Main />
-        <AxolotlsSlider />
-        <AxolotlsClasses />
-        <Roadmap />
-        <JoinOurCommunity />
-        <Faq />
+        {
+          isLorePage ? <Lore /> : <>
+            <Main />
+            <AxolotlsSlider />
+            <AxolotlsClasses />
+            <Roadmap />
+            <JoinOurCommunity />
+            <Faq />
+          </>
+        }
 
       </main>
       <Footer />

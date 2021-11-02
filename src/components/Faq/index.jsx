@@ -50,7 +50,7 @@ const Faq = props => {
   const componentClass = props.className || "faq"
 
   return (
-    <section className={componentClass}>
+    <section className={componentClass} id={componentClass}>
       <div className={`${componentClass}_wrapper`}>
         <h2>{'FAQ'}</h2>
         <div className={`${componentClass}_content`}>
