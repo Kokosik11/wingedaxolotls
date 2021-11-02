@@ -126,3 +126,23 @@
     display: none;
   }
 }
+
+@media (max-width: 497px) {
+  .mySwiperClasses .swiper-slide-next {
+    position: relative;
+  }
+
+  .mySwiperClasses .swiper-slide-next .slide-content {
+    position: absolute;
+    width: 242px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0 ;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
