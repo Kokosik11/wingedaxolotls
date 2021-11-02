@@ -36,10 +36,10 @@ const FaqItem = ({title, text}) => {
   const [expanded, toggleExpand] = useState(false);
 
   return (
-    <div className={componentClass}>
+    <div className={componentClass} onClick={() => toggleExpand(!expanded)}>
       <div className={`${componentClass}_header`}>
         <div className={`${componentClass}_title`}>{title}</div>
-        <img className={expanded ? `${componentClass}_expand ${componentClass}_expand-open` : `${componentClass}_expand`} src={arrow} alt={'expand'} onClick={() => toggleExpand(!expanded)} />
+        <img className={expanded ? `${componentClass}_expand ${componentClass}_expand-open` : `${componentClass}_expand`} src={arrow} alt={'expand'} />
       </div>
       <div className={expanded ? `${componentClass}_text`: `${componentClass}_text-close`}>{text}</div>
     </div>
