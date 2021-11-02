@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./style.css";
 
 import Arch from "../../assets/slider/arch.jpg";
@@ -49,16 +49,28 @@ const data = [
 const AxolotlsClasses = props => {
     const componentClass = props.className || "axolotls-classes"
     
+    // useEffect(() => {
+    //     const swiperSlide = document.querySelectorAll(".swiper-slide");
+    //     swiperSlide.forEach(slide => {
+    //         slide.onclick = () => {
+    //             swiperSlide.forEach(sld => {
+    //                 sld.classList.remove("swiper-slide-next")
+    //             })
+
+    //             slide.classList.add("swiper-slide-next");
+    //         }
+    //     })
+    // })
+
     return (
         <section className={componentClass}>
             <div className={componentClass+"_wrapper"}>
                 <h2><span className="gradient-purple">Axolotls</span> classes</h2>
 
                 <Swiper 
-                    slidesPerView={5}  
+                    slidesPerView={3}  
                     direction={'vertical'}
                     loop={true} 
-                    activeIndex={2}
                     
                     className="mySwiperClasses"
                 >
