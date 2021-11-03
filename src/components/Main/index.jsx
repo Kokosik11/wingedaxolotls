@@ -20,7 +20,7 @@ const Main = props => {
                   <span className="gradient-purple">{'5000 unique Axolotls'} </span>
                   {'that need owners'}
                 </h1>
-                <span className={`${componentClass}_content_mainText`}>{'The Winged Axolotls is a NFT collection of 3333 unique Axolotls inspired by our Axoverse. Each axolotl has its own unique trait, and also belongs to one of 6 classes.'}</span>
+                <span className={`${componentClass}_content_mainText`}>{'The Winged Axolotls is a NFT collection of 5000 unique Axolotls inspired by our Axoverse. Each axolotl has its own unique trait, and also belongs to one of 6 classes.'}</span>
               </div>
               <div className={`${componentClass}_gif`}>
                 <img src={gif} alt={'axolotls-gif'} />
