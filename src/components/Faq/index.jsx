@@ -10,15 +10,19 @@ const fqaItems = [
   },
   {
     title: 'When Mint?',
-    text: 'Mid - End November (more info soon)',
+    text: 'End November (more info soon)',
   },
   {
     title: 'What is the total supply?',
     text: '5000',
   },
   {
+    title: 'Will there be a whitelist?',
+    text: 'Yes',
+  },
+  {
     title: 'Will there be a pre-sale?',
-    text: 'No',
+    text: 'Yes, only for whitelist',
   },
   {
     title: 'What is the Winged Axolotls lore about?',

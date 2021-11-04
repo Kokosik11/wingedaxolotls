@@ -58,7 +58,7 @@
 }
 
 .swiper-slide-next img {
-    width: 408px;
+  border: 1px solid rgba(130, 0, 255, 0.2);
     transition: .3s;
 }
 

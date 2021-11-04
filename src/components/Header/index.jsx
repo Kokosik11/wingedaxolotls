@@ -5,6 +5,7 @@ import Logo from "../../assets/logo.png";
 import Twitter from "../../assets/twitter.svg";
 import Wallet from "../../assets/wallet.svg";
 import Burger from "../../assets/burger.svg";
+import Discord from "../../assets/community/discord.svg";
 
 import { Link } from "react-scroll";
 

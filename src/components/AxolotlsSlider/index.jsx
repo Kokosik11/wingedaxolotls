@@ -13,13 +13,17 @@ import SwiperCore, {
 
 SwiperCore.use([Autoplay, Pagination]);
 
-import One from "../../assets/slider/1.jpg";
-import Two from "../../assets/slider/2.jpg";
-import Three from "../../assets/slider/3.jpg";
-import Four from "../../assets/slider/4.jpg";
-import Five from "../../assets/slider/5.jpg";
+import One from "../../assets/slider/a1.jpg";
+import Two from "../../assets/slider/a2.jpg";
+import Three from "../../assets/slider/a3.jpg";
+import Four from "../../assets/slider/a4.jpg";
+import Five from "../../assets/slider/a5.jpg";
+import Six from "../../assets/slider/a6.jpg";
+import Seven from "../../assets/slider/a7.jpg";
+import Eight from "../../assets/slider/a8.jpg";
+import Nine from "../../assets/slider/a9.jpg";
 
-const sliderImgs = [ One, Two, Three, Four, Five ];
+const sliderImgs = [ One, Two, Three, Four, Five, Six, Seven, Eight, Nine ];
 
 const AxolotlsSlider = props => {
     const componentClass = props.className || "axolotls-slider"

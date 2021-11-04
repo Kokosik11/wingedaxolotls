@@ -27,8 +27,8 @@ const Main = props => {
               </div>
             </div>
             <div className={`${componentClass}_connect-wallet`}>
-              <span>{'Connect a wallet'}</span>
-              <img src={connectWallet} alt={'connect wallet'}/>
+              <span>{'Coming Soon'}</span>
+              {/*<img src={connectWallet} alt={'connect wallet'}/>*/}
             </div>
           </div>
         </section>

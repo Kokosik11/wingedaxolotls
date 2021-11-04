@@ -1,7 +1,7 @@
 .roadmap {
   display: flex;
   justify-content: center;
-  margin: 180px 0;
+  margin: 0;
 }
 
 .roadmap_wrapper {
@@ -12,10 +12,12 @@
 }
 
 .roadmap_title {
+  align-self: flex-start;
   font-weight: 700;
   font-size: 65px;
   color: #EFEFEF;
   padding: 20px 0;
+  margin: 0 0 80px;
 }
 
 .roadmap-item {
@@ -124,6 +126,13 @@
 
   .roadmap-item_text {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .roadmap_title {
+    margin-bottom: 20px;
+    align-self: center;
   }
 }
 
