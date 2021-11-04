@@ -22,33 +22,33 @@ SwiperCore.use([Autoplay, Navigation]);
 const data = [
     {
         img: Drakonid,
-        title: "Drakonid",
-        description: "Draconidal Axolotls, settled on Dravolinn, a harsh, unsightly continent, are known for their high stamina and extreme resistance to the effects of the environment that serves them as their home. The bodies of this genus are covered with strong scales, and the webbed wings are topped with sharp tips on the lashes."
-    },
-    {
-        img: Arch,
-        title: "Arch",
-        description: "Thousands of needles from the mountains that pierce the skies over New Angels have become habitats of Archangel Axolotes. Older brothers, unlike their coastal relatives, prefer mountain heights and the peace of ancient rocks. Their formidable wings, consisting of large feathers, warm their masters in the storm and the blog scale, as sharp as the stones here, securely protects against any external influences. As with \"down-to-earth\" colleagues, the bodies of these majestic creatures are capable of emitting light from concentrated clumps under the scales"
-    },
-    {
-        img: AxoBut,
-        title: "Axo But",
-        description: "The new Eden is divided into the equator of the Cape Desert, the northern part of which is owned by the Butterfly Axolotel, which is threatened by warm, vast plains and green hills. The inhabitants of the north are free, graceful, and slow. Their beautiful flannel wings, the biggest among their kin, have a pairwise separation, and the body is coated with crystalline nectar scales that shoot glare in the sun"
+        title: "Draconid",
+        description: "Draconic axolotls which settled on Dravolinn - a harsh, unsightly continent are known for their high endurance and extreme resistance to the external environment that serves as their home. Their bodies covered with strong scales and the membranous wings are crowned with sharp tips on the lunges."
     },
     {
         img: Demon,
-        title: "Demon",
-        description: "The demonic axolotes are somewhat reminiscent of their Draconian brethren by the bends of their webbed wings, surmounted also by single thorns, but the appearance is deceptive - their wings are smaller, mach more often, and their temper is cunning. Most of them are loners, but they also have collective representation with a clear hierarchy, due to their habitat - the entire Finds Island Archipelago, full of countless mountain ranges, belongs to these creatures."
+        title: "Demonic",
+        description: "Demonic axolotls partly resemble their Draconid counterparts with with curve membranous wings topped with single spikes but their appearance is deceiving - their wings are smaller, swing more often and their temper is more cunning. Most of them are loners however there are also collective representations with a clear hierarchy which is due to their habitat - the entire Fiends-Islands Archipelago full of countless mountain ranges belongs to these creatures."
     },
     {
-        img: Dragonfly,
-        title: "Dragonfly",
-        description: "The South of New Eden, full of unspoiled jungles and tropical swamps with rare land hills, harbored axolotes. The southern brethren of the Butterfly Axolotes can reciprocate with two pairs of the fastest monoplastic wings boast the highest speed and mobility, which undoubtedly, due to their fast-changing habitats. As for the cover, the bodies of the Strekonites are as smooth as possible in order to have maximum permeability in tropical drill conditions, and the wings are covered with a repellent gel allowing to reject foreign particles and keep the wings always in perfect purity."
+        img: Angelic,
+        title: "Angelic",
+        description: "For Angelic axolotls the sandy white, yellow and pebble shores of New-Angeles washed by warm currents have become a resort. Spending most of the time on pearl-colored stones near the water these axolotls are remarkable for the structure of their body - the feathered compact wings easily fold into a dorsal fold and their body extremely flexible and smooth is capable of emitting a barely noticeable whitish light in the dark."
+    },
+    {
+        img: Arch,
+        title: "Archangel",
+        description: "Thousands of mountain needles piercing the skies over New-Angeles have become the habitat of the Archangel axolotls. The older brothers unlike their coastal relatives prefer the height of the mountains and the peace of ancient rocks. Their impressive wings consisting of large feathers warm their owners in bad weather and their bloom scales sharp like local stones reliably protect from any external influences. Like their \"down-to-earth\" colleagues the bodies of these majestic creatures are capable of emitting light that comes out in concentrated clots from under the scales."
+    },
+    {
+        img: AxoBut,
+        title: "Butterfly",
+        description: "New Eden is divided along the equator by the Keirrat Desert, its northern part belongs to the Butterfly axolotls which bask in the warm vast plains and green hills. The inhabitants of the north are free, graceful and unhurried. Their beautiful lamellar wings the largest among relatives are divided in pairs and the body is covered with crystalline nectar scales that shoot glare in the sun."
     },
     {
       img: Angelic,
-      title: "Angelic",
-      description: 'For the Angels, the sandy white, yellow, and pebble coasts of New Angels were blessed with warm currents. Spending most of the time on the pearly color of stones near water these axolotes are remarkable for the structure of their body - feathered wings easily fold into the back fold, and their body, extremely flexible and smooth, is able to emit a faint white light in the dark.'
+      title: "Dragonite",
+      description: 'The south of New Eden full of impassable jungles and tropical swamps with rare hills of land sheltered the Dragonite axolotls. In response the southern cousins   of Butterfly axolotls due to the two pairs of fastest monoplastic wings can boast of the highest speed and mobility which is undoubtedly due to their rapidly changing habitat conditions. As for the cover the bodies of the Dragonites are as smooth as possible in order to have maximum permeability in a tropical windbreak and the wings are covered with a repulsive gel that allows you to reject foreign particles and keep the wings always in perfect cleanliness.'
     }
 
 ]

@@ -45,6 +45,8 @@
 }
 
 .roadmap-item_text {
+  display: flex;
+  flex-direction: column;
   color: #5C519C;
   font-size: 25px;
   font-weight: 500;
