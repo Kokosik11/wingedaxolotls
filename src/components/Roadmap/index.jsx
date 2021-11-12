@@ -32,13 +32,13 @@ const RoadmapItem = ({id, title, text}) => {
   return (
     <div className={componentClass} id={componentClass}>
       <div className={`${componentClass}_top-line`} />
-      <div className={`${componentClass}_bottom-line`} />
+      <div className={id === '.04' ? `${componentClass}_bottom-line_last` : `${componentClass}_bottom-line`} />
       <img src={sphere} alt={'sphere'} className={`${componentClass}_sphere`} />
       <div className={`${componentClass}_title`}>
         <span className={`${componentClass}_id`}>{id}</span>
         {title}
       </div>
-      <div className={`${componentClass}_text`}>{Array.isArray(text) ? text.map(item => <><span>{item}</span> <br /></>) : text}</div>
+      <div className={`${componentClass}_text`}>{Array.isArray(text) ? text.map(item => <><span>{item}</span></>) : text}</div>
     </div>
   )
 }

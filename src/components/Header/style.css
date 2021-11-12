@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 80px;
   background-color: #171523;
     box-sizing: border-box;
     padding: 20px 0;
@@ -19,6 +20,7 @@
     height: 100%;
     justify-content: space-between;
     position: relative;
+  margin: 0;
 }
 
 .header .header_nav img {
@@ -51,6 +53,10 @@
 
 .header_link {
     list-style: none;
+}
+
+.header_link a {
+  text-align: center;
 }
 
 .header_link {
@@ -90,11 +96,25 @@
 }
 
 .header_social-links {
+  position: relative;
     display: flex;
-    max-width: 311px;
     width: 100%;
-    justify-content: space-between;
+  justify-content: flex-end;
 }
+
+.twitter-icon {
+  width: 150px !important;
+  height: 46px !important;
+  border-radius: 27px !important;
+  border: 1px solid #999999 !important;
+  padding: 0 20px !important;
+  margin-right: 20px;
+}
+
+.wallet-icon {
+  margin-right: 20px;
+}
+
 
 .header_social-links a,
 .header_social-links button {
@@ -210,6 +230,31 @@
   fill: black;
 }
 
+.header_links_mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.header_links_mobile ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header_links_mobile ul a {
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  padding: 0;
+  margin: 0;
+}
+
 @media (max-width: 1276px) {
   .header_content {
     padding: 0 20px;
@@ -217,12 +262,42 @@
 }
 
 @media (max-width: 800px) {
+  .header_links_mobile ul a {
+    width: 90px;
+  }
+
   .header_links {
     display: none;
   }
 
-  .header_social-links {
-    max-width: 371px;
+  .header_content {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header_links_mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header_links_mobile ul {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .header_links_mobile a {
+    width: fit-content;
+    border: none;
+    padding: 0;
+  }
+
+  .header_links_mobile ul li {
+    width: 33%;
   }
 
   .header_burger {
@@ -230,8 +305,9 @@
   }
 
   .header_nav {
+    display: flex;
+    align-items: center;
     width: auto;
-    max-width: auto;
   }
 }
 
@@ -240,10 +316,14 @@
     display: none;
   }
 
-  .header_social-links a {
-    width: 40px;
-    border: none;
-    padding: 0;
+  .header_links_mobile ul a {
+    font-size: 14px;
+  }
+
+  .twitter-icon {
+    border: none !important;
+    width: 40px !important;
+    padding: 0 !important;
   }
 
   .header_social-links button {
@@ -277,8 +357,15 @@
     filter: invert(100%);
   }
 
+  .header_links_mobile {
+    width: 100%;
+  }
+
+  .header_links_mobile.header_social-links {
+    width: 80%;
+  }
+
   .header_social-links {
-    max-width: 200px;
     justify-content: space-around;
   }
 

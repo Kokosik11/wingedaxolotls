@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import "./style.css";
 
 import Logo from "../../assets/logo.png";
 import Twitter from "../../assets/twitter.svg";
 import Wallet from "../../assets/wallet.svg";
 import Burger from "../../assets/burger.svg";
-import Discord from "../../assets/community/discord.svg";
 
 import { Link } from "react-scroll";
 
@@ -26,58 +25,222 @@ const Header = props => {
 
     const handleBurgerClick = () => {
       setBurgerOpened(isBurgerOpened => !isBurgerOpened);
-    } 
-    
+    }
+
+
+    const mainContent = <LinkGroup className={componentClass+"_links"}>
+      <Link
+        activeClass="active"
+        to="mission"
+        spy={true}
+        smooth={true}
+        offset={-140}
+        duration={500}
+        className={componentClass + "_link"}
+      >
+        <div onClick={() => props.setIsLorePage(false)}>{'Mission'}</div>
+      </Link>
+      <Link
+        className={componentClass+"_link"}
+        activeClass="active"
+        to="roadmap"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        <div onClick={() => props.setIsLorePage(false)}>{'Roadmap'}</div>
+      </Link>
+      <Link
+        activeClass="active"
+        to="faq"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className={componentClass+"_link"}
+      >
+        <div onClick={() => props.setIsLorePage(false)}>{'FAQ'}</div>
+      </Link>
+      <Link className={props.isLorePage ? componentClass+"_link active" : componentClass+"_link"}>
+        <div onClick={() => props.setIsLorePage(true)}>{'Lore'}</div>
+      </Link>
+    </LinkGroup>
+
+    const loreContent = <LinkGroup className={componentClass+"_links"}>
+      <Link
+        activeClass="active"
+        to="mission"
+        spy={true}
+        smooth={true}
+        offset={-140}
+        duration={500}
+        className={componentClass + "_link"}
+      >
+        <div onClick={() => props.setIsLorePage(false)}>{'Back'}</div>
+      </Link>
+      <Link
+        activeClass="active"
+        to="mission"
+        spy={true}
+        smooth={true}
+        offset={-140}
+        duration={500}
+        className={componentClass + "_link"}
+      >
+        <div>{'Daily Notes'}</div>
+      </Link>
+      <Link
+        activeClass="active"
+        to="axolotlsClasses"
+        spy={true}
+        smooth={true}
+        offset={-140}
+        duration={500}
+        className={componentClass + "_link"}
+      >
+        <div onClick={() => props.setIsClassesPage(true)}>{'Classes'}</div>
+      </Link>
+    </LinkGroup>
+
+  const classesContent = <LinkGroup className={componentClass+"_links"}>
+    <Link
+      activeClass="active"
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link"}
+    >
+      <div onClick={() => props.setIsClassesPage(false)}>{'Back'}</div>
+    </Link>
+  </LinkGroup>
+
+  const notesContent = <LinkGroup className={componentClass+"_links"}>
+    <Link
+      activeClass="active"
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link"}
+    >
+      <div onClick={() => props.setIsNotesPage(false)}>{'Back'}</div>
+    </Link>
+  </LinkGroup>
+
+  const mainSecond = <>
+    <a className={'twitter-icon'} target={'_blank'} href="https://twitter.com/wingedaxolotls"><span className={componentClass+"_social-text"}>Twitter</span><img src={Twitter} alt="Icon: Twitter icon"/></a>
+    <button className={'wallet-icon'}><span className={componentClass+"_social-text"}>Wallet</span><img src={Wallet} alt="Icon: Wallet icon"/></button>
+  </>
+
+  const loreSecond = <LinkGroup className={componentClass+"_links_mobile"}>
+    <Link
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link"}
+    >
+      <div onClick={() => props.setIsLorePage(false)}>{'Back'}</div>
+    </Link>
+    <Link
+      activeClass="active"
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link"}
+    >
+      <div onClick={() => props.setIsNotesPage(true)}>{'Daily Notes'}</div>
+    </Link>
+    <Link
+      activeClass="active"
+      to="axolotlsClasses"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link"}
+    >
+      <div onClick={() => props.setIsClassesPage(true)}>{'Classes'}</div>
+    </Link>
+  </LinkGroup>
+
+  const classesSecond = <LinkGroup className={componentClass+"_links_mobile"}>
+    <Link
+      activeClass="active"
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link-classes-back"}
+    >
+      <div onClick={() => props.setIsClassesPage(false)}>{'Back'}</div>
+    </Link>
+  </LinkGroup>
+
+  const notesSecond = <LinkGroup className={componentClass+"_links_mobile"}>
+    <Link
+      activeClass="active"
+      to="mission"
+      spy={true}
+      smooth={true}
+      offset={-140}
+      duration={500}
+      className={componentClass + "_link-classes-back"}
+    >
+      <div onClick={() => props.setIsNotesPage(false)}>{'Back'}</div>
+    </Link>
+  </LinkGroup>
+
+  let headerContent;
+  let secondContent;
+  switch (props.page) {
+    case 'main': {
+      headerContent = mainContent;
+      secondContent = mainSecond;
+      break;
+    }
+    case 'lore': {
+      headerContent = loreContent;
+      secondContent = loreSecond;
+      break;
+    }
+    case 'classes': {
+      headerContent = classesContent;
+      secondContent = classesSecond;
+      break;
+    }
+    case 'notes': {
+      headerContent = notesContent;
+      secondContent = notesSecond;
+      break;
+    }
+    default: {
+      headerContent = mainContent;
+      secondContent = mainSecond;
+      break;
+    }
+  }
+
     return (
         <header className={componentClass}>
             <div className={componentClass+"_content"}>
+              {
+                props.page === 'main' &&
                 <div className={componentClass+"_nav"}>
-                    <img src={Logo} alt="Image: logo" />
-                  {props.isLorePage ? <div className={`${componentClass}_back-link`} onClick={() => props.setIsLorePage(false)}>{'Back'}</div> :
-                    <LinkGroup className={componentClass+"_links"}>
-                      <Link
-                        activeClass="active"
-                        to="mission"
-                        spy={true}
-                        smooth={true}
-                        offset={-140}
-                        duration={500}
-                        className={componentClass + "_link"}
-                      >
-                        <div onClick={() => props.setIsLorePage(false)}>{'Mission'}</div>
-                      </Link>
-                        <Link
-                          className={componentClass+"_link"}
-                          activeClass="active"
-                          to="roadmap"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}
-                        >
-                          <div onClick={() => props.setIsLorePage(false)}>{'Roadmap'}</div>
-                        </Link>
-                        <Link
-                          activeClass="active"
-                          to="faq"
-                          spy={true}
-                          smooth={true}
-                          offset={-70}
-                          duration={500}
-                          className={componentClass+"_link"}
-                        >
-                         <div onClick={() => props.setIsLorePage(false)}>{'FAQ'}</div>
-                        </Link>
-                        <Link className={props.isLorePage ? componentClass+"_link active" : componentClass+"_link"}>
-                          <div onClick={() => props.setIsLorePage(true)}>{'Lore'}</div>
-                        </Link>
-                    </LinkGroup>
-                  }
+                  <img src={Logo} alt="Image: logo" />
+                  { headerContent }
                 </div>
-
+              }
                 <div className={componentClass+"_social-links"}>
-                    <a target={'_blank'} href="https://twitter.com/wingedaxolotls"><span className={componentClass+"_social-text"}>Twitter</span><img src={Twitter} alt="Icon: Twitter icon"/></a>
-                    <button><span className={componentClass+"_social-text"}>Wallet</span><img src={Wallet} alt="Icon: Wallet icon"/></button>
+                  { secondContent }
                     {!props.isLorePage &&
                     <div onClick={handleBurgerClick} className={componentClass + "_burger"}>
                       <img className={isBurgerOpened ? 'is-close hide' : 'is-closed'} src={Burger}
